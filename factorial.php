@@ -6,9 +6,12 @@
  * @throws \RangeException if data values are out of bounds (if n > 20: 21! and above overflow the int type)
  */
 
-//unfinished
+
+//must be a loop in order for the calculation to work properly
 function factorial(int $n) {
 
+
+   //each exception gets its own throw message
    if($n < 0) {
       throw(new \RangeException("No Negatives"));
    }
@@ -16,7 +19,7 @@ function factorial(int $n) {
       throw(new \RangeException("Numbers Too Large"));
    }
 
-   $calculation = 1; //defauled to 0! = 1
+   $calculation = 1; //default to 0! = 1
    for($i = 0; $i <= $n; $i++) {
       $calculation = $calculation * $i;
    }
@@ -26,8 +29,10 @@ function factorial(int $n) {
 
 
 
-//unfinished
+
 /**
+ * my draft
+
    // 0! = 0! = 1
    $calculation = 0;
 
